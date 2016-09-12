@@ -1,6 +1,7 @@
 package com.egzefer.dto;
 
 import com.egzefer.Requirement;
+import com.egzefer.Strength;
 
 /**
  * DTO that contains the information regarding the checked password
@@ -10,184 +11,232 @@ import com.egzefer.Requirement;
  */
 public class PasswordDTO {
 
-	private String password;
+    private String password;
 
-	private Integer score;
+    private Integer score;
 
-	private Requirement lengthReq;
+    private Strength strength;
 
-	private Requirement uppercaseReq;
+    private Requirement lengthReq;
 
-	private Requirement lowercaseReq;
+    private Requirement uppercaseReq;
 
-	private Requirement numbersReq;
+    private Requirement lowercaseReq;
 
-	private Requirement symbolsReq;
+    private Requirement numbersReq;
 
-	private Requirement midNumSymReq;
+    private Requirement symbolsReq;
 
-	private Requirement totalRequirementsRequirementsReq;
+    private Requirement midNumSymReq;
 
-	private Requirement lettersOnlyReq;
+    private Requirement totalRequirementsRequirementsReq;
 
-	private Requirement numbersOnlyReq;
+    private Requirement lettersOnlyReq;
 
-	private Requirement repeatCharsReq;
+    private Requirement numbersOnlyReq;
 
-	private Requirement consecUppercaseReq;
+    private Requirement repeatCharsReq;
 
-	private Requirement consecLowercaseReq;
+    private Requirement consecUppercaseReq;
 
-	private Requirement consecNumbersReq;
+    private Requirement consecLowercaseReq;
 
-	private Requirement seqLettersReq;
+    private Requirement consecNumbersReq;
 
-	private Requirement seqNumbersReq;
+    private Requirement seqLettersReq;
 
-	private Requirement seqSymbolsReq;
+    private Requirement seqNumbersReq;
 
-	public String getPassword() {
-		return password;
-	}
+    private Requirement seqSymbolsReq;
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getPassword() {
 
-	public Integer getScore() {
-		return score;
-	}
+        return password;
+    }
 
-	public void setScore(Integer score) {
-		this.score = score;
-	}
+    public void setPassword(String password) {
 
-	public Requirement getLengthReq() {
-		return lengthReq;
-	}
+        this.password = password;
+    }
 
-	public void setLengthReq(Requirement lengthReq) {
-		this.lengthReq = lengthReq;
-	}
+    public Integer getScore() {
 
-	public Requirement getUppercaseReq() {
-		return uppercaseReq;
-	}
+        return score;
+    }
 
-	public void setUppercaseReq(Requirement uppercaseReq) {
-		this.uppercaseReq = uppercaseReq;
-	}
+    public void setScore(Integer score) {
 
-	public Requirement getLowercaseReq() {
-		return lowercaseReq;
-	}
+        this.score = score;
+    }
 
-	public void setLowercaseReq(Requirement lowercaseReq) {
-		this.lowercaseReq = lowercaseReq;
-	}
+    public Strength getStrength() {
 
-	public Requirement getNumbersReq() {
-		return numbersReq;
-	}
+        return strength;
+    }
 
-	public void setNumbersReq(Requirement numbersReq) {
-		this.numbersReq = numbersReq;
-	}
+    public void setStrength(Strength strength) {
 
-	public Requirement getSymbolsReq() {
-		return symbolsReq;
-	}
+        this.strength = strength;
+    }
 
-	public void setSymbolsReq(Requirement symbolsReq) {
-		this.symbolsReq = symbolsReq;
-	}
+    public Requirement getLengthReq() {
 
-	public Requirement getMidNumSymReq() {
-		return midNumSymReq;
-	}
+        return lengthReq;
+    }
 
-	public void setMidNumSymReq(Requirement midNumSymReq) {
-		this.midNumSymReq = midNumSymReq;
-	}
+    public void setLengthReq(Requirement lengthReq) {
 
-	public Requirement getTotalRequirementsReq() {
-		return totalRequirementsRequirementsReq;
-	}
+        this.lengthReq = lengthReq;
+    }
 
-	public void setTotalRequirementsReq(Requirement totalRequirementsReq) {
-		this.totalRequirementsRequirementsReq = totalRequirementsReq;
-	}
+    public Requirement getUppercaseReq() {
 
-	public Requirement getLettersOnlyReq() {
-		return lettersOnlyReq;
-	}
+        return uppercaseReq;
+    }
 
-	public void setLettersOnlyReq(Requirement lettersOnlyReq) {
-		this.lettersOnlyReq = lettersOnlyReq;
-	}
+    public void setUppercaseReq(Requirement uppercaseReq) {
 
-	public Requirement getNumbersOnlyReq() {
-		return numbersOnlyReq;
-	}
+        this.uppercaseReq = uppercaseReq;
+    }
 
-	public void setNumbersOnlyReq(Requirement numbersOnlyReq) {
-		this.numbersOnlyReq = numbersOnlyReq;
-	}
+    public Requirement getLowercaseReq() {
 
-	public Requirement getRepeatCharsReq() {
-		return repeatCharsReq;
-	}
+        return lowercaseReq;
+    }
 
-	public void setRepeatCharsReq(Requirement repeatCharsReq) {
-		this.repeatCharsReq = repeatCharsReq;
-	}
+    public void setLowercaseReq(Requirement lowercaseReq) {
 
-	public Requirement getConsecUppercaseReq() {
-		return consecUppercaseReq;
-	}
+        this.lowercaseReq = lowercaseReq;
+    }
 
-	public void setConsecUppercaseReq(Requirement consecUppercaseReq) {
-		this.consecUppercaseReq = consecUppercaseReq;
-	}
+    public Requirement getNumbersReq() {
 
-	public Requirement getConsecLowercaseReq() {
-		return consecLowercaseReq;
-	}
+        return numbersReq;
+    }
 
-	public void setConsecLowercaseReq(Requirement consecLowercaseReq) {
-		this.consecLowercaseReq = consecLowercaseReq;
-	}
+    public void setNumbersReq(Requirement numbersReq) {
 
-	public Requirement getConsecNumbersReq() {
-		return consecNumbersReq;
-	}
+        this.numbersReq = numbersReq;
+    }
 
-	public void setConsecNumbersReq(Requirement consecNumbersReq) {
-		this.consecNumbersReq = consecNumbersReq;
-	}
+    public Requirement getSymbolsReq() {
 
-	public Requirement getSeqLettersReq() {
-		return seqLettersReq;
-	}
+        return symbolsReq;
+    }
 
-	public void setSeqLettersReq(Requirement seqLettersReq) {
-		this.seqLettersReq = seqLettersReq;
-	}
+    public void setSymbolsReq(Requirement symbolsReq) {
 
-	public Requirement getSeqNumbersReq() {
-		return seqNumbersReq;
-	}
+        this.symbolsReq = symbolsReq;
+    }
 
-	public void setSeqNumbersReq(Requirement seqNumbersReq) {
-		this.seqNumbersReq = seqNumbersReq;
-	}
+    public Requirement getMidNumSymReq() {
 
-	public Requirement getSeqSymbolsReq() {
-		return seqSymbolsReq;
-	}
+        return midNumSymReq;
+    }
 
-	public void setSeqSymbolsReq(Requirement seqSymbolsReq) {
-		this.seqSymbolsReq = seqSymbolsReq;
-	}
+    public void setMidNumSymReq(Requirement midNumSymReq) {
+
+        this.midNumSymReq = midNumSymReq;
+    }
+
+    public Requirement getTotalRequirementsReq() {
+
+        return totalRequirementsRequirementsReq;
+    }
+
+    public void setTotalRequirementsReq(Requirement totalRequirementsReq) {
+
+        this.totalRequirementsRequirementsReq = totalRequirementsReq;
+    }
+
+    public Requirement getLettersOnlyReq() {
+
+        return lettersOnlyReq;
+    }
+
+    public void setLettersOnlyReq(Requirement lettersOnlyReq) {
+
+        this.lettersOnlyReq = lettersOnlyReq;
+    }
+
+    public Requirement getNumbersOnlyReq() {
+
+        return numbersOnlyReq;
+    }
+
+    public void setNumbersOnlyReq(Requirement numbersOnlyReq) {
+
+        this.numbersOnlyReq = numbersOnlyReq;
+    }
+
+    public Requirement getRepeatCharsReq() {
+
+        return repeatCharsReq;
+    }
+
+    public void setRepeatCharsReq(Requirement repeatCharsReq) {
+
+        this.repeatCharsReq = repeatCharsReq;
+    }
+
+    public Requirement getConsecUppercaseReq() {
+
+        return consecUppercaseReq;
+    }
+
+    public void setConsecUppercaseReq(Requirement consecUppercaseReq) {
+
+        this.consecUppercaseReq = consecUppercaseReq;
+    }
+
+    public Requirement getConsecLowercaseReq() {
+
+        return consecLowercaseReq;
+    }
+
+    public void setConsecLowercaseReq(Requirement consecLowercaseReq) {
+
+        this.consecLowercaseReq = consecLowercaseReq;
+    }
+
+    public Requirement getConsecNumbersReq() {
+
+        return consecNumbersReq;
+    }
+
+    public void setConsecNumbersReq(Requirement consecNumbersReq) {
+
+        this.consecNumbersReq = consecNumbersReq;
+    }
+
+    public Requirement getSeqLettersReq() {
+
+        return seqLettersReq;
+    }
+
+    public void setSeqLettersReq(Requirement seqLettersReq) {
+
+        this.seqLettersReq = seqLettersReq;
+    }
+
+    public Requirement getSeqNumbersReq() {
+
+        return seqNumbersReq;
+    }
+
+    public void setSeqNumbersReq(Requirement seqNumbersReq) {
+
+        this.seqNumbersReq = seqNumbersReq;
+    }
+
+    public Requirement getSeqSymbolsReq() {
+
+        return seqSymbolsReq;
+    }
+
+    public void setSeqSymbolsReq(Requirement seqSymbolsReq) {
+
+        this.seqSymbolsReq = seqSymbolsReq;
+    }
 
 }

@@ -2,10 +2,10 @@ package com.egzefer.checker;
 
 import static java.util.Arrays.asList;
 
+import com.egzefer.Requirement;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import com.egzefer.Requirement;
 
 /**
  * 
@@ -18,24 +18,25 @@ import com.egzefer.Requirement;
  */
 public class RepeatCharsChecker extends DeductionChecker {
 
-	private static final int BONUS_MULTIPLIER = 2;
+    private static final int BONUS_MULTIPLIER = 2;
 
-	@Override
-	public Requirement check(String password) {
+    @Override
+    public Requirement check(String password) {
 
-		Map<String, Integer> map = new HashMap<String, Integer>();
+        Map<String, Integer> map = new HashMap<String, Integer>();
 
-		Integer count = 0;
-		for (String key : asList(password.toLowerCase().split(""))) {
-			if (map.containsKey(key)) {
-				count += 1;
-			} else {
-				map.put(key, 0);
-			}
-		}
-		Integer bonus = count * BONUS_MULTIPLIER * -1;
+        Integer count = 0;
+        for (String key : asList(password.toLowerCase().split(""))) {
+            if (map.containsKey(key)) {
+                count += 1;
+            } else {
+                map.put(key, 0);
+            }
+        }
+        Integer bonus = count * BONUS_MULTIPLIER * -1;
+        bonus = 0;// TODO: Must know the rule to compute the bonus
 
-		return new Requirement(count, bonus, getStatus(count));
-	}
+        return new Requirement(count, bonus, getStatus(count));
+    }
 
 }
