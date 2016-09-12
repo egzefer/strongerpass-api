@@ -5,12 +5,15 @@
 
 Based on the http://www.passwordmeter.com/ website, this api receives a string as a password, validates its strength, and returns the validation details to the caller.
 
-## Sample curl:
+### Executing:
+Simply run ```StrongerpassApplication``` as a Java Application.
+
+### Sample curl:
 ```
 curl -X GET "http://localhost:8080/password/check/[the_passwORd]"
 ```
 
-## Sample result:
+### Sample result:
 ```json
 {
   "password": "[the_passwORd]",
