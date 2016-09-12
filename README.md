@@ -15,6 +15,7 @@ curl -X GET "http://localhost:8080/password/check/[the_passwORd]"
 {
   "password": "[the_passwORd]",
   "score": 100,
+  "strength": "VERY_STRONG",
   "lengthReq": {
     "count": 14,
     "bonus": 56,
