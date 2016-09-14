@@ -10,7 +10,9 @@ Simply run ```StrongerpassApplication``` as a Java Application.
 
 ### Sample curl:
 ```
-curl -X GET "http://localhost:8080/password/check/[the_passwORd]"
+curl -X POST -H "Content-Type: application/json" -d '{
+	"password":"lsakhdflkA$jhf"
+}' "http://localhost:8080/password/check"
 ```
 
 ### Sample result:

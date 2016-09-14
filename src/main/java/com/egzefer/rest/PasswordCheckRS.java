@@ -1,14 +1,14 @@
 package com.egzefer.rest;
 
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.egzefer.dto.PasswordRequestDTO;
 import com.egzefer.service.PasswordCheckService;
 
 @RestController
@@ -26,9 +26,9 @@ public class PasswordCheckRS {
 	 * @return the details about the password strength
 	 */
 	@SuppressWarnings("rawtypes")
-	@RequestMapping(value = "/check/{password}", method = GET)
-	public ResponseEntity check(@PathVariable String password) {
+	@RequestMapping(value = "/check", method = RequestMethod.POST)
+	public ResponseEntity check(@RequestBody PasswordRequestDTO dto) {
 
-		return ResponseEntity.status(HttpStatus.OK).body(service.check(password));
+		return ResponseEntity.status(HttpStatus.OK).body(service.check(dto.getPassword()));
 	}
 }
